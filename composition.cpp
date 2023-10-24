@@ -22,6 +22,11 @@ int main() {
             return 0;
         }
         else if (q == "1") {
+            if (phone._isPhoneOn()) {
+                cout << "\t\t\t\t\t Already on\n";
+                Sleep(600);
+                continue;
+            }
             phone.powerOn();
         }
         else if (q == "2") {
